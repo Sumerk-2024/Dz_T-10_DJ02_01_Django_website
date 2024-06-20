@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Наш сайт{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .jumbotron-custom {
+            background-color: #e9ecef;
+            color: #343a40;
+        }
+        .bg-custom {
+            background-color: #e9ecef;
+        }
+        .text-custom {
+            color: #343a40;
+        }
+        .nav-link-custom {
+            color: #343a40 !important;
+        }
+    </style>
+</head>
+<body>
+    {% include 'Dz_1/menu.html' %}
+    <div class="container mt-5">
+        {% block content %}{% endblock %}
+    </div>
+    {% include 'Dz_1/footer.html' %}
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

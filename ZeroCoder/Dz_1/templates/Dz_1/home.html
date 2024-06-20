@@ -1,0 +1,11 @@
+{% extends 'Dz_1/base.html' %}
+{% block title %}Главная{% endblock %}
+{% block content %}
+<div class="jumbotron jumbotron-custom">
+  <h1 class="display-4">Добро пожаловать на наш сайт!</h1>
+  <p class="lead">Это главная страница нашего сайта, где вы можете найти самую последнюю информацию о нашей деятельности.</p>
+  <hr class="my-4">
+  <p>Используйте навигационное меню, чтобы перейти к другим страницам.</p>
+  <a class="btn btn-primary btn-lg" href="{% url 'about' %}" role="button">Узнать больше</a>
+</div>
+{% endblock %}
